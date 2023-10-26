@@ -176,11 +176,11 @@
 <body>
 	<aside style="padding-top: 4.2%;">
 		<div style="width: 100%; display:flex; flex-direction:column;justify-content:center;align-items:center;">
-			<a href="./index.html"><span class="title">I . GAMER</span></a> 
+			<a href="./index.html"><span class="title">I · GAMER</span></a> 
 			
 			<div class="box ">
 			  <a href="" class="box10">
-				    <img src="./media/Group1.png">
+				    <img src="./media/Group1.png" alt="Indie Game Token">
 					<div class="game">
 						<span class="sp1">Indie Games</span>
 					</div>
@@ -190,7 +190,7 @@
 			
 			<div class="box">
 			  <a href="./index2.html" class="box10">
-				  <img src="./media/Group2.png">
+				  <img src="./media/Group2.png" alt="Game Movie Token">
 				  <div class="game">
 					<span class="sp1">Game Movies</span>
 				  </div>
@@ -201,7 +201,7 @@
 			
 			<div class="box">
 			   <a href="" class="box10">
-				   <img src="./media/Group3.png">
+				   <img src="./media/Group3.png" alt="Indie Game Reviews Token">
 					<div class="game">
 						<span class="sp1">Indie Game</span>
 						<span class="sp1">Reviews</span>
@@ -213,7 +213,7 @@
 			
 			<div class="box">
 			   <a href="./index4.html" class="box10">
-				   <img src="./media/Group4.png">
+				   <img src="./media/Group4.png" alt="Podcast Token">
 					<div class="game">
 						<span class="sp1">Podcast</span>
 					</div>
@@ -224,7 +224,7 @@
 			
 			<div class="box">
 			  <a href="" class="box10">
-				  <img src="./media/Group5.png">
+				  <img src="./media/Group5.png" alt="Forum Token">
 				  <div class="game">
 						<span class="sp1">Forum</span>
 				  </div>
@@ -235,9 +235,9 @@
 			
 			<div class="box ">
 			  <a href="" class="box10">
-				  <img src="./media/Group6.png">
+				  <img src="./media/Group6.png" alt="Offline Discussions Group Token">
 				  <div class="game">
-						<span>fline</span>
+						<span>offline</span>
 						<span>Player Discussions</span>
 				  </div>
 			  </a>
@@ -284,19 +284,19 @@
 						<div class="swiper-wrapper">
 		
 						  <div class="swiper-slide">
-							<img src="./media/image/1.png">
+							<img src="./media/image/1.png" alt="Game image">
 						  </div>
 		
 						  <div class="swiper-slide">
-							<img src="./media/image/2.png">
+							<img src="./media/image/2.png" alt="Game image">
 						  </div>
 		
 						  <div class="swiper-slide">
-							<img src="./media/image/3.png">
+							<img src="./media/image/3.png" alt="Game image">
 						  </div>
 		
 						  <div class="swiper-slide">
-							<img src="./media/image/4.png">
+							<img src="./media/image/4.png" alt="Game image">
 						  </div>
 						</div>
 						<div class="swiper-pagination"></div>
@@ -344,13 +344,101 @@
 			</div>
 		</main>
 		
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>User Comments</title>
+			<style>
+				body {
+					background-color: #333;
+					color: white;
+					font-family: Arial, sans-serif;
+					text-align: center;
+					margin: 0;
+				}
+				.comment {
+					text-align: left;
+					margin-bottom: 10px;
+					padding-left: 20px;
+				}
+				.comment-form, .comments {
+					width: 80%;
+					margin: 20px auto;
+				}
+				.comment-form h2, .comments h2 {
+					text-align: left;
+					margin: 10px 0;
+				}
+				.comment-form label, .comment-form textarea, .comment-form input, .comment-form button {
+					display: block;
+					text-align: left;
+					margin: 5px 0;
+				}
+				.comment-form input {
+					width: 100%;
+				}
+				.comment-form button {
+					width: auto;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="comment-form">
+				<h2>Post a Comment</h2>
+				<form id="comment-form">
+					<label for="name">Name:</label>
+					<input type="text" id="name" required><br>
+		
+					<label for="comment">Comment:</label>
+					<textarea id="comment" rows="4" required></textarea><br>
+		
+					<button type="submit">Submit Comment</button>
+				</form>
+			</div>
+		
+			<div class="comments">
+				<h2>User Comments</h2>
+				<div class="comment">
+					<h3><strong>User 1</strong></h3>
+					<p>This is the comment from User 1.</p>
+				</div>
+				<div class="comment">
+					<h3><strong>User 2</strong></h3>
+					<p>This is the comment from User 2.</p>
+				</div>
+			</div>
+		
+			<script>
+				// JavaScript code for handling comment submission and display can stay in English.
+				document.getElementById('comment-form').addEventListener('submit', function (e) {
+					e.preventDefault();
+					var name = document.getElementById('name').value;
+					var comment = document.getElementById('comment').value;
+		
+					if (name && comment) {
+						var newComment = document.createElement('div');
+						newComment.className = 'comment';
+						newComment.innerHTML = '<h3><strong>' + name + '</strong></h3><p>' + comment + '</p>';
+						document.querySelector('.comments').appendChild(newComment);
+		
+						// Clear the form
+						document.getElementById('name').value = '';
+						document.getElementById('comment').value = '';
+					}
+				});
+			</script>
+		</body>
+		</html>
+		
+		
+		
 		<footer>
 			<ul>
 				<li>
-					<img style="width: 16px; height: 16px;" src="./media/1.png"/>
+					<img style="width: 16px; height: 16px;" src="./media/1.png" alt="Twitter Logo">
 				</li>
 				<li>
-					<img style="width: 16px; height: 16px;" src="./media/2.png"/>
+					<img style="width: 16px; height: 16px;" src="./media/2.png" alt="Facebook Logo">
 				</li>
 				<li>ABOUT</li>
 				<li>FAQ</li>
