@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
 	<meta charset="UTF-8">
@@ -43,6 +43,7 @@
 		aside  img{
 			width: 45px !important;
 			height: 38px;
+			transition: all .6s;
 		}
 
 
@@ -118,21 +119,21 @@
 		<div style="width: 100%; display:flex; flex-direction:column;justify-content:center;align-items:center;">
 			<a href="./index.html"><span class="title">I . GAMER</span></a> 
 			
-			<div class="box">
-			  <a href="">
-				    <img src="./image/Group1.png">
+			<div class="box ">
+			  <a href="" class="box10">
+				    <img src="./media/Group1.png">
 					<div class="game">
-						<span>Indie Games</span>
+						<span class="sp1">Indie Games</span>
 					</div>
 			  </a>	
 				
 			</div>
 			
 			<div class="box">
-			  <a href="./index2.html">
-				  <img src="./image/Group2.png">
+			  <a href="./index2.html" class="box10">
+				  <img src="./media/Group2.png">
 				  <div class="game">
-					<span>Game Movies</span>
+					<span class="sp1">Game Movies</span>
 				  </div>
 			  </a>
 				
@@ -140,11 +141,11 @@
 			</div>
 			
 			<div class="box">
-			   <a href="">
-				   <img src="./image/Group3.png">
+			   <a href="" class="box10">
+				   <img src="./media/Group3.png">
 					<div class="game">
-						<span>Indie Game</span>
-						<span>Reviews</span>
+						<span class="sp1">Indie Game</span>
+						<span class="sp1">Reviews</span>
 					</div>
 			   </a>	
 				
@@ -152,10 +153,10 @@
 			</div>
 			
 			<div class="box">
-			   <a href="./index4.html">
-				   <img src="./image/Group4.png">
+			   <a href="./index4.html" class="box10">
+				   <img src="./media/Group4.png">
 					<div class="game">
-						<span>Podcast</span>
+						<span class="sp1">Podcast</span>
 					</div>
 			   </a>	
 				
@@ -163,19 +164,19 @@
 			</div>
 			
 			<div class="box">
-			  <a href="">
-				  <img src="./image/Group5.png">
+			  <a href="" class="box10">
+				  <img src="./media/Group5.png">
 				  <div class="game">
-						<span>Forum</span>
+						<span class="sp1">Forum</span>
 				  </div>
 			  </a>
 				
 				
 			</div>
 			
-			<div class="box">
-			  <a href="">
-				  <img src="./image/Group6.png">
+			<div class="box ">
+			  <a href="" class="box10">
+				  <img src="./media/Group6.png">
 				  <div class="game">
 						<span>fline</span>
 						<span>Player Discussions</span>
@@ -188,29 +189,26 @@
 		</div>
 		
 		<div class="user">
-			<img src="./image/user.png">
+			<img src="./media/user.png">
 		</div>
 	</aside>
 
-	<article style="width: 83%;margin: 0 auto;">
+	<article style="width: 74%;margin: 0 auto;">
 		<header>
 			<div class="nav-warp" style="padding-top: 5%;">
 				<div class="box1">
-					<img src="./image/Group7.png" alt="">
+					
 					<div class="input">
-						<input type="text">
-						<img src="./image/search.png" alt="">
+						<input style="height: 30px;" type="text">
+						<img src="./media/search.png" alt="">
 					</div>
 				</div>
 
-				<div class="box2">
-					<button>Concern</button>
-					<button>Latest</button>
-				</div>
+				
 
 				<div class="box3">
 					<button>log in</button>
-					<button><a href="./index5.html">sign up</a> </button>
+					<button><a href="./index5.html" style="color: black;">sign up</a> </button>
 				</div>
 			</div>
 		</header>
@@ -218,7 +216,7 @@
 		<main>
 			<div class="box1">
 				<div class="left">
-					<img src="./image/Rectangle1.png" alt="">
+					<img src="./media/Rectangle1.png" alt="">
 				</div>
 
 				<div class="right">
@@ -227,13 +225,13 @@
 						<span>share your interests and creations</span>
 					</div>
 
-					<div class="cs2">See all <img src="./image/1697728298310.jpg" alt=""></div>
+					<div class="cs2">See all <img src="./media/1697728298310.jpg" alt=""></div>
 				</div>
 			</div>
 
 			<div class="box2">
 				<div class="left">
-					<div><img src="./image/1697730025102.jpg" alt=""></div>
+					<div><img src="./media/1697730025102.jpg" alt=""></div>
 					<a href=""><span>Unity's new charging policy sparks strong opposition, with</span></a> 
 					<a href=""><span>several studios considering switching engines</span></a> 
 					<a href=""><span>or even taking games off the shelves</span></a> 
@@ -257,10 +255,10 @@
 		<footer>
 			 <ul>
 				 <li>
-					 <img style="width: 16px; height: 16px;" src="./image/1.png"/>
+					 <img style="width: 16px; height: 16px;" src="./media/1.png"/>
 				 </li>
 				 <li>
-					 <img style="width: 16px; height: 16px;" src="./image/2.png"/>
+					 <img style="width: 16px; height: 16px;" src="./media/2.png"/>
 				 </li>
 				 <li>ABOUT</li>
 				 <li>FAQ</li>
@@ -318,5 +316,30 @@
 	}
 	</style>
 </body>
+<script>
+	var tags = document.getElementsByClassName('box10');  
+        for(var i = 0; i < tags.length; i++) {  
+            tags[i].addEventListener('mouseover', function() {  
+                for(var j = 0; j < this.children.length; j++) {
+					console.log(this.children[1]);
+                    this.children[0].style.transform="scale(1.2)"
+					this.children[1].style.color="red"
+                    if(this.children[j].classList.contains('sp1')) { 
+						 
+                        this.children[j].style.color = 'red';  
+                    }  
+                } 
+            });  
+            tags[i].addEventListener('mouseout', function() {  
+                for(var j = 0; j < this.children.length; j++) {
+                    this.children[0].style.transform="scale(1)"
+					this.children[1].style.color="#999"
+                    if(this.children[j].classList.contains('sp1')) {  
+                        this.children[j].style.color = 'white';  
+                    }  
+                }
+            });  
+        }
+</script>
 
 </html>

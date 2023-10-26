@@ -1,9 +1,16 @@
+@font-face {
+	font-family: "MyFont"; /*指定创建的字体名称，可自行更改*/
+	src: url("./SourceHanSerifCN-Bold.otf"); /*指定字体文件路径，注意需在引号中加入路径*/
+	}
 body{
 	margin: 0;
 	padding: 0;
 	display: flex;
 	background-color: #1c1c1d;
 	padding-right: 2.5%;
+
+
+	font-family: "MyFont";
 }
 
 div{
@@ -54,7 +61,7 @@ header .nav-warp .box1 .input{
 
 header .nav-warp .box1 .input input{
 	border: 0px solid #000;
-	background-color: #212122;
+	background-color: #aaaaad;
 	width: 100%;
 	border-radius: 5px;
 }
@@ -100,7 +107,7 @@ header .nav-warp .box3 button{
 }
 
 header .nav-warp .box3 button:nth-child(1){
-	background-color: #e2defa;
+	background-color: #e98686;
 }
 
 main .box1,

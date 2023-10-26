@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,9 @@
 		<div class="form">
 			<div class="gb">X</div>
 			<div class="title">Create an account on l.GAMER</div>
-			<div class="inp1"><input type="text" placeholder="Your email address"></div>
-			<div class="inp1"><input type="text" placeholder="username"></div>
-			<div class="inp1"><input type="text" placeholder="Password"></div>
+			<div class="inp1"><input type="text" placeholder="Your email address" class="email"></div>
+			<div class="inp1"><input type="text" placeholder="username" class="username"></div>
+			<div class="inp1"><input type="text" placeholder="Password" class="password"></div>
 			<div class="xy">
 				<div style="font-weight: 600;"><span>About you</span></div>
 				<div><input type="checkbox"><span>I'm interested in playing or downloading gameson I. GAMER</span></div>
@@ -27,7 +27,7 @@
 			<div class="xy2" style="border-top: 1px solid #999;"><input type="checkbox"><span>Sign me up for the bi-monthly 1. GAMER digest newsletter</span></div>
 			<div class="xy2"><input type="checkbox"><span>I accept the <span style="color: #ec9595;text-decoration: underline;">Temms of Service</span></span></div>
 			<div class="bu">
-				<div style="border-radius: 2px;padding: 5px;background-color: #e98686;color: #fff;">Create account</div><span style="color: #999;margin-left: 1%;">or already have an account?</span><span>Log in</span>
+				<div onclick="fn()" style="border-radius: 2px;padding: 5px;background-color: #e98686;color: #fff;">Create account</div><span style="color: #999;margin-left: 1%;">or already have an account?</span><span>Log in</span>
 			</div>
 		</div>
 	</main>
@@ -109,4 +109,29 @@
 		color: #999;
 	}
 </style>
+<script>
+	function fn(){
+        var username=document.getElementsByClassName("username")[0].value;
+		var password=document.getElementsByClassName("password")[0].value;
+		var email=document.getElementsByClassName("email")[0].value;
+		// console.log(username,password,email)
+		if(username==""){
+			alert("名称不能为空");
+			return false
+		}
+
+		if(password==""){
+			alert("密码不能为空");
+			return false
+		}
+
+		var reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/; 
+
+		if(reg.test(email)==false){
+			alert("邮箱格式不正确");
+		}else{
+			alert("成功")
+		}
+	}
+</script>
 </html>

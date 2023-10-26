@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
 		aside  img{
 			width: 45px !important;
 			height: 38px;
+			transition: all .6s;
 		}
 
 
@@ -21,7 +22,7 @@
 		}
 
 		aside .box:hover{
-			background: #3e3e3f;
+			background: #3e3e3e;
 			cursor: pointer;
 		}
 		.box2 button{
@@ -33,8 +34,28 @@
 
 		.box3 button{
 			width: 85px;
-			height: 36px;
+			height: 30px;
 			border: none;
+		}
+		.IDGM{
+			width: 100%;
+
+
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			/* 网格间隙，只有中间生效，所以需要padding属性使外围生效 */
+			grid-gap: 10px;
+			padding: 10px;
+			/* background-color: #55aaff; */
+		}
+
+
+
+		.IDGM .box{
+			background-color: #55ff00;
+			text-align: center;
+			/* height: 200px; */
+			/* font-size: 30px; */
 		}
 		a{
 			display: inline-block;
@@ -70,7 +91,7 @@
 
 
 		footer ul li{
-			color: #5e5e5f;
+			color: #5e5e5e;
 			margin-left: 15px;
 		}
 	</style>
@@ -80,21 +101,21 @@
 		<div style="width: 100%; display:flex; flex-direction:column;justify-content:center;align-items:center;">
 			<a href="./index.html"><span class="title">I . GAMER</span></a> 
 			
-			<div class="box">
-			  <a href="">
-				    <img src="./image/Group1.png">
+			<div class="box ">
+			  <a href="" class="box1">
+				    <img src="./media/Group1.png">
 					<div class="game">
-						<span>Indie Games</span>
+						<span class="sp1">Indie Games</span>
 					</div>
 			  </a>	
 				
 			</div>
 			
 			<div class="box">
-			  <a href="./index2.html">
-				  <img src="./image/Group2.png">
+			  <a href="./index2.html" class="box1">
+				  <img src="./media/Group2.png">
 				  <div class="game">
-					<span>Game Movies</span>
+					<span class="sp1">Game Movies</span>
 				  </div>
 			  </a>
 				
@@ -102,11 +123,11 @@
 			</div>
 			
 			<div class="box">
-			   <a href="">
-				   <img src="./image/Group3.png">
+			   <a href="" class="box1">
+				   <img src="./media/Group3.png">
 					<div class="game">
-						<span>Indie Game</span>
-						<span>Reviews</span>
+						<span class="sp1">Indie Game</span>
+						<span class="sp1">Reviews</span>
 					</div>
 			   </a>	
 				
@@ -114,10 +135,10 @@
 			</div>
 			
 			<div class="box">
-			   <a href="./index4.html">
-				   <img src="./image/Group4.png">
+			   <a href="./index4.html" class="box1">
+				   <img src="./media/Group4.png">
 					<div class="game">
-						<span>Podcast</span>
+						<span class="sp1">Podcast</span>
 					</div>
 			   </a>	
 				
@@ -125,19 +146,19 @@
 			</div>
 			
 			<div class="box">
-			  <a href="">
-				  <img src="./image/Group5.png">
+			  <a href="" class="box1">
+				  <img src="./media/Group5.png">
 				  <div class="game">
-						<span>Forum</span>
+						<span class="sp1">Forum</span>
 				  </div>
 			  </a>
 				
 				
 			</div>
 			
-			<div class="box">
-			  <a href="">
-				  <img src="./image/Group6.png">
+			<div class="box ">
+			  <a href="" class="box1">
+				  <img src="./media/Group6.png">
 				  <div class="game">
 						<span>fline</span>
 						<span>Player Discussions</span>
@@ -150,7 +171,7 @@
 		</div>
 		
 		<div class="user">
-			<img src="./image/user.png">
+			<img src="./media/user.png">
 		</div>
 	</aside>
 	
@@ -158,33 +179,30 @@
 		<header>
 			<div class="nav-warp" style="padding-top: 5%;">
 				<div class="box1">
-					<img src="./image/Group7.png" alt="">
+					
 					<div class="input">
 						<input type="text">
-						<img src="./image/search.png" alt="">
+						<img style="height: auto;" src="./media/search.png" alt="">
 					</div>
 				</div>
 				
-				<div class="box2">
-					<button>Concern</button>
-					<button>Latest</button>
-				</div>
+				
 				
 				<div class="box3">
 					<button>log in</button>
-					<button><a href="./index5.html">sign up</a> </button>
+					<button><a href="./index5.html" style="color: black;">sign up</a> </button>
 				</div>
 			</div>
 		</header>
 		
 		<main>
 			<div class="banner">
-				<div><img src="./image/Rectangle1.png" alt=""></div>
+				<div><img src="./media/Rectangle1.png" alt=""></div>
 				<div class="title">
-					<img src="./image/Group1.png" alt="">
-					<span>Welcome to | . GAMER !</span>
+					<img src="./media/Group1.png" alt="">
+					<span>🎮 Welcome to I · GAMER !</span>
 				</div>
-				<span style="font-size: 12px;color: #888;" >Your gaming adventure begins here. Discover indie gems, connect with gamers worldwideand stay updated with the latest gaming news Joincontests and tournaments , win amazing prizes审，and level up together. Let's game on!</span>
+				<span style="font-size: 12px;color: #888;" >Your gaming adventure begins here. Discover indie gems, connect with gamers worldwide 🌍, and stay updated with the latest gaming news 📰. Join contests and tournaments 🏆, win amazing prizes 🎁, and level up together. Let's game on! 🚀</span>
 			</div>
 			
 			<div class="IDGM-title">INDIE GAMES</div>
@@ -192,12 +210,12 @@
 				
 				<div class="box">
 				 <a href="./index3.html" style="display: block;">	
-					<img src="./image/Y8Ygyt.png" style="height: 180px;" class="ig1">
+					<img src="./media/Y8Ygyt.png" style="height: 180px;" class="ig1">
 					<span class="t1">Folder Dungeon </span>
 					<span>Dungeon crawler roguelike</span>
 					<span>inside computer folder!</span>
 					<div style="display: flex;padding-top: 3%;align-items: center;">
-						<div class="ig2"><img src="./image/Ellipse.png"></div>
+						<div class="ig2"><img src="./media/Ellipse.png"></div>
 						<div>
 							<span class="t2">Rarvent</span>
 							<span class="t3">1 hour ago</span>
@@ -207,12 +225,12 @@
 				</div>
 				
 				<div class="box">
-					<img src="./image/YqHSxr.png" class="ig1">
+					<img src="./media/YqHSxr.png" class="ig1">
 					<span class="t1">Data Baron</span>
 					<span>Action</span>
 					<span>&nbsp;</span>
 					<div style="display: flex;padding-top: 3%;align-items: center;">
-						<div class="ig2"><img src="./image/Ellipse.png"></div>
+						<div class="ig2"><img src="./media/Ellipse.png"></div>
 						<div>
 							<span class="t2">Rarvent</span>
 							<span class="t3">1 hour ago</span>
@@ -221,12 +239,12 @@
 				</div>
 				
 				<div class="box">
-					<img src="./image/eMVFbW.png" class="ig1">
+					<img src="./media/eMVFbW.png" class="ig1">
 					<span class="t1">Hello MR.Moon</span>
 					<span>Unique platformer</span>
 					<span>&nbsp;</span>
 					<div style="display: flex;padding-top: 3%;align-items: center;">
-						<div class="ig2"><img src="./image/Ellipse.png"></div>
+						<div class="ig2"><img src="./media/Ellipse.png"></div>
 						<div>
 							<span class="t2">Rarvent</span>
 							<span class="t3">1 hour ago</span>
@@ -235,12 +253,12 @@
 				</div>
 				
 				<div class="box">
-					<img src="./image/SWDDWN.png" class="ig1">
+					<img src="./media/SWDDWN.png" class="ig1">
 					<span class="t1">Repower</span>
 					<span>Puzzle game with grappling</span>
 					<span>hook and power mechanlcs</span>
 					<div style="display: flex;padding-top: 3%;align-items: center;">
-						<div class="ig2"><img src="./image/Ellipse.png"></div>
+						<div class="ig2"><img src="./media/Ellipse.png"></div>
 						<div>
 							<span class="t2">Rarvent</span>
 							<span class="t3">1 hour ago</span>
@@ -253,19 +271,19 @@
 			<div class="IDGM-2" style="height: 420px;">
 				
 				<div class="box">
-					<img style="height: 420px;" src="./image/MV5BOTY2NzFjODctOWUzMC00MGZhLTlhNjMtM2Y2ODBiNGY1ZWRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg">
+					<img style="height: 420px;" src="./media/MV5BOTY2NzFjODctOWUzMC00MGZhLTlhNjMtM2Y2ODBiNGY1ZWRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg">
 				</div>
 				
 				<div class="box">
-					<img style="height: 420px;" src="./image/PixelsOfficialPoster.jpg">
+					<img style="height: 420px;" src="./media/PixelsOfficialPoster.jpg">
 				</div>
 				
 				<div class="box">
-					<img style="height: 420px;" src="./image/s-l1600.jpg">
+					<img style="height: 420px;" src="./media/s-l1600.jpg">
 				</div>
 				
 				<div class="box">
-					<img style="height: 420px;" src="./image/image1.jpg">
+					<img style="height: 420px;" src="./media/image1.jpg">
 				</div>
 			</div>
 		</main>
@@ -273,10 +291,10 @@
 		<footer>
 			<ul>
 				<li>
-					<img style="width: 16px; height: 16px;" src="./image/1.png"/>
+					<img style="width: 16px; height: 16px;" src="./media/1.png"/>
 				</li>
 				<li>
-					<img style="width: 16px; height: 16px;" src="./image/2.png"/>
+					<img style="width: 16px; height: 16px;" src="./media/2.png"/>
 				</li>
 				<li>ABOUT</li>
 				<li>FAQ</li>
@@ -415,4 +433,30 @@
 		margin-right: 5%;
 	}
 </style>
+<script>
+	var tags = document.getElementsByClassName('box1');  
+        for(var i = 0; i < tags.length; i++) {  
+            tags[i].addEventListener('mouseover', function() {  
+                for(var j = 0; j < this.children.length; j++) {
+
+					this.children[0].style.transform="scale(1.2)"
+					console.log(this.children[1])
+					this.children[1].style.color="red"
+                    if(this.children[j].classList.contains('sp1')) { 
+						 
+                        this.children[j].style.color = 'red';  
+                    }  
+                } 
+            });  
+            tags[i].addEventListener('mouseout', function() {  
+                for(var j = 0; j < this.children.length; j++) {
+					this.children[0].style.transform="scale(1)"
+					this.children[1].style.color="#999"
+                    if(this.children[j].classList.contains('sp1')) {  
+                        this.children[j].style.color = 'white';  
+                    }  
+                }
+            });  
+        }  
+</script>
 </html>
