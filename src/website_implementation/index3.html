@@ -375,7 +375,7 @@
 					margin: 5px 0;
 				}
 				.comment-form input {
-					width: 100%;
+					width: 10%;
 				}
 				.comment-form button {
 					width: auto;
@@ -409,7 +409,6 @@
 			</div>
 		
 			<script>
-				// JavaScript code for handling comment submission and display can stay in English.
 				document.getElementById('comment-form').addEventListener('submit', function (e) {
 					e.preventDefault();
 					var name = document.getElementById('name').value;
@@ -421,7 +420,6 @@
 						newComment.innerHTML = '<h3><strong>' + name + '</strong></h3><p>' + comment + '</p>';
 						document.querySelector('.comments').appendChild(newComment);
 		
-						// Clear the form
 						document.getElementById('name').value = '';
 						document.getElementById('comment').value = '';
 					}
