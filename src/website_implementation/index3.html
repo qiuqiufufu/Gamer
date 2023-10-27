@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+	<!-- 
+		all pictures of game characters were sourced by screenshots from the games that the picture are of The Wild beyond the Witchlight.
+		all pictures of game movies were sourced by https://www.imdb.com/
+		all icons are designed by myself
+	-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
@@ -332,11 +337,11 @@
 					
 					<div class="us">
 						<div >
-							<img style="border-radius: 50%;" src="./media/image/6.png">
+							<img style="border-radius: 50%;" src="./media/image/6.png" alt="">
 							<span>Mochi</span>
 						</div>
 						<div>
-							<img style="border-radius: 50%;" src="./media/image/7.png">
+							<img style="border-radius: 50%;" src="./media/image/7.png" alt="">
 							<span>Guai</span>
 						</div>
 					</div>
@@ -344,7 +349,6 @@
 			</div>
 		</main>
 		
-		<!DOCTYPE html>
 		<html>
 		<head>
 			<title>User Comments</title>
@@ -385,51 +389,27 @@
 		<body>
 			<div class="comment-form">
 				<h2>Post a Comment</h2>
-				<form id="comment-form">
+				<form id="comment-form" enctype="multipart/form-data">
 					<label for="name">Name:</label>
-					<input type="text" id="name" required><br>
+					<input type="text" id="username" name="username" required><br>
 		
 					<label for="comment">Comment:</label>
-					<textarea id="comment" rows="4" required></textarea><br>
+					<textarea id="comment" name="comment" rows="4" required></textarea><br>
 		
 					<button type="submit">Submit Comment</button>
 				</form>
 			</div>
-		
-			<div class="comments">
-				<h2>User Comments</h2>
-				<div class="comment">
-					<h3><strong>User 1</strong></h3>
-					<p>This is the comment from User 1.</p>
-				</div>
-				<div class="comment">
-					<h3><strong>User 2</strong></h3>
-					<p>This is the comment from User 2.</p>
-				</div>
+	
+
+			<div id="comments_from_api">
+
 			</div>
+
 		
-			<script>
-				document.getElementById('comment-form').addEventListener('submit', function (e) {
-					e.preventDefault();
-					var name = document.getElementById('name').value;
-					var comment = document.getElementById('comment').value;
-		
-					if (name && comment) {
-						var newComment = document.createElement('div');
-						newComment.className = 'comment';
-						newComment.innerHTML = '<h3><strong>' + name + '</strong></h3><p>' + comment + '</p>';
-						document.querySelector('.comments').appendChild(newComment);
-		
-						document.getElementById('name').value = '';
-						document.getElementById('comment').value = '';
-					}
-				});
-			</script>
 		</body>
 		</html>
 		
-		
-		
+				
 		<footer>
 			<ul>
 				<li>
@@ -580,6 +560,7 @@ aside{
 </style>
 
 <script src="./js/swiper.min.js"></script>
+<script src="./js/index3_api.js"></script>
 
 
 
